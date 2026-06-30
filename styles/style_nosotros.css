@@ -1,0 +1,377 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #FFD341;
+    --background-color: #eeeff1;
+    --background-color2: #1E1E1E;
+
+    --color-principal: #0E643F;
+
+    --h1-size: 36px;
+    --h2-size: 24px;
+    --h3-size: 20px;
+    --h4-size: 16px;
+    --h5-size: 14px;
+}
+
+.navbar .derecha span {
+    background-color: var(--color-principal);
+    border-radius: 15px;
+    padding: 5px 10px;
+
+    color: white;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    padding: 20px 100px;
+}
+
+.presentacion-bloque {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+
+    background-color: white;
+}
+
+.presentacion-bloque h2 {
+    text-align: center;
+    font-size: var(--h1-size);
+}
+
+.presentacion-bloque h3 {
+    font-size: var(--h3-size);
+}
+
+.presentacion-bloque p {
+    font-size: var(--h4-size);
+}
+
+.contenedor-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding-top: 10px;
+}
+
+.contenedor-izquierda div {
+    display: flex;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: var(--background-color);
+}
+
+.contenedor-izquierda div section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenedor-izquierda img {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.contenedor-derecha {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    padding-top: 15px;
+}
+
+.contenedor-derecha div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--background-color);
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+}
+
+.contenedor-derecha img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.contenedor-derecha div section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    text-align: center;
+}
+
+.alma {
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+}
+
+.alma div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1000px;
+
+    background-color: white;
+}
+
+.alma div h2 {
+    font-size: var(--h1-size);
+}
+
+.contenedor-alma {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: var(--h2-size);
+    width: 100%;
+}
+
+.contenedor-alma img {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    flex-shrink: 0;
+}
+
+.contenedor-alma p {
+    flex: 1;
+    min-width: 250px;
+    line-height: 1.6;
+}
+
+.consultora-article {
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+}
+
+.consultora-link {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.consultora-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 15px;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--color-principal), #0E643F);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.consultora-contenido:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.consultora-contenido h2 {
+    font-size: var(--h1-size);
+    text-align: center;
+}
+
+.consultora-contenido p {
+    font-size: var(--h4-size);
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* --> Media <-- */
+@media (max-width: 1024px) {
+    .presentacion {
+        padding: 20px 50px;
+    }
+
+    .presentacion-bloque {
+        max-width: 100%;
+    }
+
+    .alma {
+        padding: 20px 50px;
+    }
+
+    .consultora-article {
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .presentacion-bloque {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .contenedor-izquierda div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedor-izquierda img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contenedor-derecha {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .contenedor-derecha div {
+        width: 100%;
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .alma {
+        padding: 15px 20px;
+    }
+
+    .alma div {
+        padding: 20px;
+    }
+
+    .contenedor-alma {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .contenedor-alma img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .contenedor-alma p {
+        min-width: auto;
+        font-size: var(--h4-size);
+    }
+
+    .consultora-article {
+        padding: 15px 20px;
+    }
+
+    .consultora-contenido {
+        padding: 30px 20px;
+    }
+
+    .consultora-contenido h2 {
+        font-size: 20px;
+    }
+
+    .consultora-contenido p {
+        font-size: var(--h4-size);
+    }
+}
+
+@media (max-width: 480px) {
+    .presentacion {
+        padding: 10px 10px;
+    }
+
+    .presentacion-bloque h2 {
+        font-size: 20px;
+    }
+
+    .presentacion-bloque p {
+        font-size: 14px;
+    }
+
+    .contenedor-izquierda div {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .contenedor-izquierda img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contenedor-derecha div {
+        padding: 15px;
+    }
+
+    .contenedor-derecha img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .alma {
+        padding: 10px;
+    }
+
+    .alma div {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .alma div h2 {
+        font-size: 18px;
+    }
+
+    .contenedor-alma {
+        gap: 15px;
+    }
+
+    .contenedor-alma p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .consultora-article {
+        padding: 10px 10px;
+    }
+
+    .consultora-contenido {
+        padding: 20px 15px;
+        gap: 10px;
+    }
+
+    .consultora-contenido h2 {
+        font-size: 18px;
+    }
+
+    .consultora-contenido p {
+        font-size: 13px;
+    }
+}
+

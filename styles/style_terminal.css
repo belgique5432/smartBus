@@ -1,0 +1,314 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #FFD341;
+    --background-color: #eeeff1;
+    --background-color2: #1E1E1E;
+
+    --color-principal: #0E643F;
+
+    --h1-size: 36px;
+    --h2-size: 24px;
+    --h3-size: 20px;
+    --h4-size: 16px;
+    --h5-size: 14px;
+}
+
+fieldset {
+    border: none;
+}
+
+/* --> Primero <-- */
+.primero {
+    padding-bottom: 40px;
+}
+
+.superior {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    color: white;
+
+    padding: 10px 100px;
+    padding-bottom: 50px;
+}
+
+.superior .sitios-anteriores {
+    display: flex;
+
+    gap: 15px;
+}
+
+.superior .sitios-anteriores a {
+    color: white;
+}
+
+.formulario-pasajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    width: fit-content;
+    border-radius: 20px;
+    
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    margin: 0 auto;
+    padding: 15px;
+
+    position: relative;
+    top: -2rem;
+    margin-bottom: -4rem;
+}
+
+.formulario-pasajes button {
+    color: white;
+    background-color: var(--color-principal);
+}
+
+.formulario-pasajes input {
+    padding: 5px;
+}
+
+.formulario-pasajes .formulario-carta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario-pasajes .fechas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* --> Información <-- */
+.informacion {
+    padding: 20px 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.informacion .informacion-terminal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.informacion-terminal .terminal-contacto {
+    display: flex; 
+    flex-direction: column;
+    gap: 16px;
+    width: 45%;
+}
+
+.terminal-contacto .texto-terminal {
+    display: flex; 
+    flex-direction: column;
+    gap: 12px;
+}
+
+.informacion-terminal .terminal-ubicacion {
+    box-shadow: 5px 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 20px;
+
+    width: 43%;
+    max-width: 640px;
+}
+
+.informacion-terminal .terminal-ubicacion iframe {
+    border-radius: 20px;
+}
+
+.empresas-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+}
+
+.empresas-article{
+    display: flex;
+    justify-content: center;
+}
+
+.empresas-container h2 {
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+}
+
+.cards-empresas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding: 5;
+}
+
+.empresa-card {
+    width: 250px;
+    height: 150px;
+    background-color: #fff;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+.article-servicio {
+    text-align: left;
+}
+
+.servicios-section {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.ul-servicios {
+    display: grid;
+    grid-template-columns:repeat(3, minmax(100px, 1fr));
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    column-gap: 5rem;
+    text-align: left;
+}
+
+.ul-servicios li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+
+/* --> Media <-- */
+@media (min-width: 1024px) {
+    .formulario-pasajes .opciones {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .primero {
+        padding-bottom: 0;
+    }
+
+    .superior {
+        padding: 10px 50px;
+        padding-bottom: 150px;
+    }
+
+    .formulario-pasajes {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin: 0 50px;
+        width: auto;
+
+        top: -8rem;
+        margin-bottom: -6rem;
+    }
+
+    .formulario-pasajes .formulario-carta {
+        width: 100%;
+    }
+
+        .cards-empresas-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .formulario-pasajes .fechas {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .informacion {
+        padding: 10px 50px;
+    }
+
+    .informacion .informacion-terminal {
+        flex-direction: column;
+    }
+
+    .informacion-terminal .terminal-contacto {
+        width: 100%;
+    }
+
+    .informacion-terminal .terminal-ubicacion {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .article-servicio {
+        text-align: left;
+        justify-content: flex-start;
+        width: fit-content;
+    }
+
+    .ul-servicios {
+        display: grid;
+        grid-template-columns:repeat(2, minmax(100px, 1fr));
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .superior {
+        padding: 10px 10px;
+        padding-bottom: 150px;
+    }
+
+    .formulario-pasajes {
+        margin: 0 10px;
+
+        top: -8rem;
+        margin-bottom: -7rem;
+    }
+
+    .informacion {
+        padding: 10px 10px;
+    }
+
+    .informacion-terminal .terminal-ubicacion {
+        box-shadow: 0 0 0 0;
+    }
+
+    .cards-empresas-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .article-servicio {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .servicios-section{
+        display: inline;
+    }
+
+    .ul-servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+}

@@ -1,0 +1,170 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style_index.css">
+    <link rel="stylesheet" href="styles/style_terminal.css">
+    
+    <title>SmartBus</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="izquierda">
+            <li><a href="index.html"><img src="images/logo smart bus.png" alt="logo"></a></li>
+            <li><a href="index.html">SmartBus</a></li>
+        </ul>
+        <ul class="derecha">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="mobile-nav">
+            <button class="burger-menu" id="burger-menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="principal-main">
+        <section style="width: 100%; max-width: 600px; margin: 3rem auto; padding: 2rem; background: white; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.15);">
+            <h2 style="margin-bottom: 1rem; color: #0E643F;">Contacto</h2>
+            <p style="margin-bottom: 1.5rem;">Escribinos y te responderemos a la brevedad.</p>
+            <form id="form-contacto" style="display: flex; flex-direction: column; gap: 1rem;">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required style="padding: 10px; font-size: 16px;">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required style="padding: 10px; font-size: 16px;">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta" required style="padding: 10px; font-size: 16px; resize: vertical;"></textarea>
+
+                <p id="mensaje-exito" style="display: none; margin: 0; padding: 10px; border-radius: 6px; background-color: #e8f8ef; color: #0E643F; font-weight: 600;">Tu mensaje se envió con éxito. Gracias por contactarte.</p>
+
+                <button type="submit" style="background-color: #0E643F; color: white; padding: 10px 15px; border: none; border-radius: 6px; cursor: pointer;">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="ofertas">
+            <div class="ofertas-formulario">
+                <h2>Recibí ofertas y novedades en tu mail</h2>
+                <form>
+                    <input type="email" id="email" placeholder="Ingrese tu correo electrónico">
+                    <button type="submit">Suscribete</button>
+                </form>
+            </div>
+
+            <div class="ofertas-logo">
+                <a href="#"><img src="images/logo smart bus.png" alt="logo"></a>
+            </div>
+        </section>
+
+        <div class="final">
+            <ul class="carta">
+                <li>Marca</li>
+                <li><hr></li>
+                <li class="footer_marca">
+                    <img src="images/logo smart bus blanco.png" alt="logo">
+                    <p>SmartBus</p>
+                </li>
+                <li><p>
+                    SmartBus es tu plataforma 
+                    confiable para planificar y reservar 
+                    tus viajes en micro por Argentina.
+                    <br>
+                    Conectando ciudades de forma 
+                    segura y fácil.
+                </p></li>
+            </ul>
+            
+            <ul class="carta">
+                <li>Atención al cliente</li>
+                <li><hr></li>
+                <li>
+                    <ul class="links">
+                        <li><a href="">Preguntas frecuentes</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Defensa al consumidor</a></li>
+                        <li><a href="">Medios de pago</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul class="carta">
+                <li>Descubrir Argentina</li>
+                <li><hr></li>
+                <li>
+                    <ul class="links">
+                        <li><a href="https://mknaus-uade.github.io/grupo02-acrividad02/">Buenos Aires</a></li>
+                        <li><a href="./mardel.html">Mar del plata</a></li>
+                        <li><a href="#">Bahía Blanca</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="carta">
+                <li>Contacto</li>
+                <hr>
+                <li><a href="">0810-122-SMART (7627)</a></li>
+                <li><a href="">contacto@smartbus.com.ar</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>copy@2026 SmartBus. Todos los derechos reservados. | Políticas de Cookies</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navLinks = document.getElementById('nav-links');
+            const form = document.getElementById('form-contacto');
+            const mensajeExito = document.getElementById('mensaje-exito');
+
+            if (burgerMenu && navLinks) {
+                burgerMenu.addEventListener('click', () => {
+                    navLinks.classList.toggle('is-open');
+                });
+            }
+
+            if (form && mensajeExito) {
+                form.addEventListener('submit', (event) => {
+                    event.preventDefault();
+
+                    const nombre = document.getElementById('nombre').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const mensaje = document.getElementById('mensaje').value.trim();
+
+                    const asunto = `Contacto desde SmartBus - ${nombre || 'Sin nombre'}`;
+                    const cuerpo = `Nombre: ${nombre}\nCorreo: ${email}\n\nMensaje:\n${mensaje}`;
+
+                    window.location.href = `mailto:seniniezequiel780@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+
+                    mensajeExito.style.display = 'block';
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

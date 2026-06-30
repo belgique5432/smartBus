@@ -1,0 +1,238 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style_index.css">
+    <link rel="stylesheet" href="styles/style_terminal.css">
+    
+    <title>SmartBus</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="izquierda">
+            <li><a href="index.html"><img src="images/logo smart bus.png" alt="logo"></a></li>
+            <li><a href="index.html">SmartBus</a></li>
+        </ul>
+
+        <ul class="derecha">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="mobile-nav">
+            <button class="burger-menu" id="burger-menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <!-- Primero -->
+        <article class="primero">
+            <header class="superior" style="background-image: url(images/buenos\ aires.webp); background-position: center  center;">
+                <nav class="sitios-anteriores">
+                    <a href="">Pasajes en micro</a>
+                    <span> / </span>
+                    <a href="">Buenos Aires</a>
+                </nav>
+                <h1>Terminal de Buenos Aires</h1>
+            </header>
+
+            <form action="" class="formulario-pasajes">
+                <div class="formulario-carta">
+                    <label for="origen">Origen*</label>
+                    <input type="text" id="origen" name="origen" placeholder="Ingrese ciudad o Terminal" required>
+                </div>
+                
+                <div class="formulario-carta">
+                    <label for="destino">Destino*</label>
+                    <input type="text" id="destino" name="destino" placeholder="Ingrese ciudad o Terminal" required>
+                </div>
+
+                <fieldset class="fechas">
+                    <div class="formulario-carta">
+                        <label for="f-partida">Partida*</label>
+                        <input type="date" id="f-partida" name="f-partida" required>
+                    </div>
+
+                    <div class="formulario-carta">
+                        <label for="f-regreso">Regreso</label>
+                        <input type="date" id="f-regreso" name="f-regreso">
+                    </div>
+                </fieldset>
+
+               <div class="formulario-carta">
+                    <label for="c-pasajeros">Pasajeros*</label>
+                    <input type="number" id="c-pasajeros" name="c-pasajeros" value="1" min="1" max="10" required>
+                </div>
+
+                <div class="formulario-carta">
+                    <button type="submit">Buscar pasajes</button>
+                </div>
+            </form>
+        </article>
+
+        <!-- Información -->
+        <article class="informacion">
+            <h2>Terminal de Buenos Aires</h2>
+            <section class="informacion-terminal">
+                <div class="terminal-contacto">
+                    <h3>Información de contacto</h3>
+                    <address class="texto-terminal">
+                        <p><strong>Teléfono:</strong> <a href="tel:01143100700">011 4310-0700</a></p>
+                        <p><strong>Dirección:</strong> Av. Antártida Argentina 1202-1300, Ciudad Autónoma de Buenos Aires, Argentina</p>
+                        <p><strong>Cómo llegar:</strong> Podés llegar en colectivo con más de 30 líneas (5, 6, 7, 9, 20, 21, 22, 23, 26, 28, 33, 45, 50, 51, 54, 56, 61, 62, 70, 75, 91, 100, 101, 106, 108, 115, 126, 129, 130, 132, 143, 150, 152 y 195), en subte Línea C (estación Retiro) o trenes Mitre, San Martín y Belgrano Norte (300 m). También podés usar taxi o remis.</p>
+                        <p><strong>Horario:</strong> Acceso: de Lunes a Domingo las 24hs — Boleterías: de Lunes a Domingo las 24hs</p>
+                    </address>
+                                       <article class="article-servicio">
+                        <h2>Servicios disponibles</h2>
+                        <section class="servicios-section">
+                            <ul class="ul-servicios">
+                                <div>
+                                    <li><img src="./images/iconos/wifi_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>WiFi</p></li>
+                                    <li><img src="./images/iconos/luggage_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Guarda equipajes</p></li>
+                                    <li><img src="./images/iconos/directions_car_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Estacionamiento</p></li>
+                                </div>
+                                <div>
+                                    <li><img src="./images/iconos/wc_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Baños públicos</p></li>
+                                    <li><img src="./images/iconos/local_taxi_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Paradas de taxi</p></li>
+                                    <li><img src="./images/iconos/store_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Locales comerciales</p></li>
+                                </div>
+                                <div>
+                                    <li><img src="./images/iconos/local_cafe_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Restaurantes y cafés</p></li>
+                                    <li><img src="./images/iconos/airline_seat_recline_normal_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Salas de espera</p></li>
+                                    <li><img src="./images/iconos/attach_money_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt=""><p>Cajero automático</p></li>
+                                </div>
+                            </ul>
+                        </section>
+                    </article>
+                </div>
+
+                <div class="terminal-ubicacion">
+                    <figure>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.640925119135!2d-58.3720195!3d-34.587951200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccba4261792d1%3A0xab9a879048920ba4!2sTerminal%20de%20Omnibus%20Retiro!5e0!3m2!1ses-419!2sar!4v1779998034622!5m2!1ses-419!2sar"
+                            style="border:0; width: 100%; height: 450px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa de la Terminal de Ómnibus de Retiro">
+                        </iframe>
+                    </figure>
+                </div>
+            </section>
+        </article>
+
+        <article class="empresas-article">
+            <section class="empresas-container">
+                <h2>Empresas asociadas</h2>
+                <div class="cards-empresas-container">
+                    <div class="empresa-card"> <a href="https://viabariloche.com.ar/"><img src="./images/logo-via-bariloche.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://www.plusmar.com.ar/es"><img src="./images/logo-plusmar.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://www.condorestrella.com.ar/en"><img src="./images/logo-condor-estrella.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://viatac.com.ar/"><img src="./images/logo-via-tac.png" alt=""></a></div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="ofertas-footer">
+            <div class="ofertas-formulario">
+                <h2>Recibí ofertas y novedades en tu mail</h2>
+                <form>
+                    <input type="email" id="email" placeholder="Ingrese tu correo electrónico">
+                    <button type="submit">Suscribete</button>
+                </form>
+            </div>
+
+            <div class="ofertas-logo">
+                <a href="#"><img src="images/logo smart bus.png" alt="logo"></a>
+            </div>
+        </section>
+
+        <div class="final">
+            <ul class="carta">
+                <li>Marca</li>
+                <li><hr></li>
+                <li class="footer_marca">
+                    <img src="images/logo smart bus blanco.png" alt="logo">
+                    <p>SmartBus</p>
+                </li>
+                <li><p>
+                    SmartBus es tu plataforma 
+                    confiable para planificar y reservar 
+                    tus viajes en micro por Argentina.
+                    <br>
+                    Conectando ciudades de forma 
+                    segura y fácil.
+                </p></li>
+            </ul>
+            
+            <ul class="carta">
+                <li>Atención al cliente</li>
+                <li><hr></li>
+                <li>
+                    <ul class="links">
+                        <li><a href="">Preguntas frecuentes</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Defensa al consumidor</a></li>
+                        <li><a href="">Medios de pago</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul class="carta">
+                <li>Descubrir Argentina</li>
+                <li><hr></li>
+                <li>
+                    <ul class="links">
+                        <li><a href="https://mknaus-uade.github.io/grupo02-acrividad02/">Buenos Aires</a></li>
+                        <li><a href="https://belgique5432.github.io/tpuade/">Mar del plata</a></li>
+                        <li><a href="#">Bahía Blanca</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="carta">
+                <li>Contacto</li>
+                <hr>
+                <li><a href="">0810-122-SMART (7627)</a></li>
+                <li><a href="">contacto@smartbus.com.ar</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>copy@2026 SmartBus. Todos los derechos reservados. | Políticas de Cookies</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navLinks = document.getElementById('nav-links');
+
+            burgerMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('is-open');
+            });
+        });
+    </script>
+</body>
+</html>

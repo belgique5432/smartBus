@@ -1,0 +1,145 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #FFD341;
+    --background-color: #eeeff1;
+    --background-color2: #1E1E1E;
+
+    --color-principal: #0E643F;
+
+    --h1-size: 36px;
+    --h2-size: 24px;
+    --h3-size: 20px;
+    --h4-size: 16px;
+    --h5-size: 14px;
+}
+
+
+.principal-main {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+}
+
+.principal-main form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.principal-main form label {
+    font-size:18px;
+}
+
+.publicidad h2 {
+    background-color: var(--color-principal);
+    border-radius: 10px 10px 1px 1px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    max-width: 603px;
+}
+
+.publicidad img {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      width: 100%;
+}
+
+.img-publicidad {
+    max-width: 550px;
+}
+
+
+
+.principal-main form {
+    max-width: 550px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    padding: 2rem;
+}
+
+.principal-main form input {
+    padding: 10px;
+        font-size:18px;
+}
+
+.fechas {
+    display: flex;
+}
+
+.pasajeros {
+    display: flex;
+}
+
+
+.button-form {
+    background-color: #0E643F;
+    color: white;
+    padding: 10px;
+}
+
+.nro-pasaje {
+    width:100%;
+    text-align: center;
+}
+
+.radio {
+    accent-color: var(--color-principal);
+}
+
+.resultados-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tarjeta-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: min(100%, 500px);
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.resultado-imagen-link {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.resultado-imagen-link img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 1023px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: shrink;
+    }
+
+    .fechas {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .resultados-container {
+        align-items: center;
+    }
+
+    .tarjeta-resultado {
+        width: 100%;
+    }
+}

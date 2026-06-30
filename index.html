@@ -1,0 +1,195 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style_index.css">
+    <link rel="stylesheet" href="styles/style_terminal.css">
+    <link rel="stylesheet" href="styles/style_inicio.css">
+    <script src="index.js"></script>
+    <title>SmartBus</title>
+    
+
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="izquierda">
+            <li><a href="index.html"><img src="images/logo smart bus.png" alt="logo"></a></li>
+            <li><a href="index.html">SmartBus</a></li>
+        </ul>
+        <ul class="derecha">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="mobile-nav">
+            <button class="burger-menu" id="burger-menu"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="principal-main">
+        <form id="formulario-busqueda" action="">
+            <h2>Busca tus pasajes en micro</h2>
+            
+            <label for="origen-input">Origen</label>
+            <input type="text" id="origen-input" placeholder="Ingrese ciudad o terminal">
+            
+            <label for="destino-input">Destino</label>
+            <input type="text" id="destino-input" placeholder="Ingrese ciudad o terminal" required>
+            
+            <div>
+                <div>
+                    <input type="radio" id="solo-ida" class="radio checkbox-exclusivo" name="tipo_viaje" value="ida" checked> 
+                    <label for="solo-ida">Sólo ida</label>
+                    
+                    <input type="radio" id="ida-vuelta" class="radio checkbox-exclusivo" name="tipo_viaje" value="ida_y_vuelta"> 
+                    <label for="ida-vuelta">Ida y vuelta</label>  
+                </div>
+                
+                <div class="fechas">
+                    <div>
+                        <label for="">Partida</label>
+                        <input type="date" placeholder="Fecha de partida">
+                    </div>
+                    <div>
+                        <label for="">Regreso</label>
+                        <input type="date" placeholder="Fecha de regreso">
+                    </div>
+                </div>    
+            </div>
+
+            <label for="">Pasajeros</label>
+            <div class="pasajeros">
+                <button type="button" id="btn-disminuir-pasajeros">-</button>
+                <p class="nro-pasaje" id="nro-pasaje">1</p>
+                <button type="button" id="btn-aumentar-pasajeros">+</button>
+            </div>
+            
+            <button type="submit" class="button-form">Buscar pasajes</button>
+        </form>
+
+        <div id="resultados-container" class="resultados-container"></div>
+
+        <div class="publicidad">
+            <h2>Viaja con la mejor financiación</h2>
+            <div class="img-publicidad">
+            <img src="./images/publicidad.png" alt="">
+            </div>
+        </div>
+    </main>
+
+            <article class="empresas-article">
+            <section class="empresas-container">
+                <h2>Empresas asociadas</h2>
+                <div class="cards-empresas-container">
+                    <div class="empresa-card"> <a href="https://viabariloche.com.ar/"><img src="./images/logo-via-bariloche.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://www.plusmar.com.ar/es"><img src="./images/logo-plusmar.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://www.condorestrella.com.ar/en"><img src="./images/logo-condor-estrella.png" alt=""></a></div>
+                    <div class="empresa-card"><a href="https://viatac.com.ar/"><img src="./images/logo-via-tac.png" alt=""></a></div>
+                </div>
+            </section>
+        </article>
+
+    <!-- Footer -->
+    <footer>
+        <section class="ofertas">
+            <div class="ofertas-formulario">
+                <h2>Recibí ofertas y novedades en tu mail</h2>
+                <form>
+                    <input type="email" id="email" placeholder="Ingrese tu correo electrónico">
+                    <button type="submit">Suscribete</button>
+                </form>
+            </div>
+
+            <div class="ofertas-logo">
+                <a href="#"><img src="images/logo smart bus.png" alt="logo"></a>
+            </div>
+        </section>
+
+        <div class="final">
+            <ul class="carta">
+                <li>Marca</li>
+                <li><hr></li>
+                <li class="footer_marca">
+                    <img src="images/logo smart bus blanco.png" alt="logo">
+                    <p>SmartBus</p>
+                </li>
+                <li><p>
+                    SmartBus es tu plataforma 
+                    confiable para planificar y reservar 
+                    tus viajes en micro por Argentina.
+                    <br>
+                    Conectando ciudades de forma 
+                    segura y fácil.
+                </p></li>
+            </ul>
+            
+            <ul class="carta">
+                <li>Atención al cliente</li>
+                <li><hr></li>
+                <li>
+                    <ul class="links">
+                        <li><a href="">Preguntas frecuentes</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Defensa al consumidor</a></li>
+                        <li><a href="">Medios de pago</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul class="carta">
+                <li>Descubrir Argentina</li>
+                <li><hr></li>
+                <li>
+                    <ul class="links">
+                        <li><a href="https://mknaus-uade.github.io/grupo02-acrividad02/">Buenos Aires</a></li>
+                        <li><a href="./mardel.html">Mar del plata</a></li>
+                        <li><a href="#">Bahía Blanca</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="carta">
+                <li>Contacto</li>
+                <hr>
+                <li><a href="">0810-122-SMART (7627)</a></li>
+                <li><a href="">contacto@smartbus.com.ar</a></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>copy@2026 SmartBus. Todos los derechos reservados. | Políticas de Cookies</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerMenu = document.getElementById('burger-menu');
+            const navLinks = document.getElementById('nav-links');
+
+            burgerMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('is-open');
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>

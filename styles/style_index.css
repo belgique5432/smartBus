@@ -1,0 +1,320 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #FFD341;
+    --background-color: #eeeff1;
+    --background-color2: #1E1E1E;
+
+    --color-principal: #0E643F;
+
+    --h1-size: 36px;
+    --h2-size: 24px;
+    --h3-size: 20px;
+    --h4-size: 16px;
+    --h5-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: normal;
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a { 
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+button {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: var(--h4-size);
+    color: var(--text-color);
+    
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    font-family: "Space Grotesk", sans-serif;
+    color: var(--text-color);
+
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+/* --> Navbar <-- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 100px;
+    height: 80px;
+}
+
+.navbar .izquierda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .izquierda img {
+    width: 70px;
+    height: auto;
+}
+
+.navbar .izquierda a {
+    font-size: var(--h2-size);
+}
+
+.navbar .derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: var(--h4-size);
+}
+
+/* --> Footer <-- */
+footer {
+    background-color: var(--background-color2);
+}
+
+/* --> Ofertas <-- */
+.ofertas-formulario {
+    background-color: var(--background-color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 100px;
+    padding-bottom: 80px;
+}
+
+.ofertas-formulario h2 {
+    color: white;
+    font-size: var(--h3-size);
+    font-weight: normal;
+
+    padding: 10px 0;
+}
+
+.ofertas-formulario form {
+    background-color: var(--background-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.ofertas-formulario form input {
+    font-size: var(--h4-size);
+    border: 2px transparent;
+    
+    outline: none;
+    resize: none;
+    width: 300px;
+}
+
+.ofertas-formulario form button {
+    background-color: var(--link-color);
+}
+
+.ofertas-logo {
+    background-color: var(--background-color);
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.ofertas-logo a {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0 auto;
+    background-color: var(--background-color);
+
+    position: relative;
+    top: -4rem;
+    margin-bottom: -4rem;
+}
+
+.ofertas-logo img {
+    width: auto;
+}
+
+/* --> Final <-- */
+.final {
+    background-color: var(--background-color2);
+    padding: 10px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.final .carta {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    width: 24%;
+}
+
+.final .carta a,
+.final .carta p {
+    color: white;
+    font-size: var(--h5-size);
+}
+
+.final .carta li {
+    color: white;
+    font-size: var(--h3-size);
+}
+
+.final .carta hr {
+    background-color: var(--color-principal);
+    height: 2px;
+    width: 50%;
+    border: none;
+}
+
+.final .carta .footer_marca {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.final .carta .footer_marca img {
+    width: 75px;
+    height: auto;
+}
+
+.final .carta .footer_marca p {
+    font-size: var(--h3-size);
+}
+
+/* --> COPYRIGHT <-- */
+.copyright{
+    background-color: black;
+    color: white;
+    font-size: var(--h5-size);
+    text-align: center;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+/* --> Media <-- */
+@media (max-width: 1023px) {
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .final {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .navbar .derecha{
+        display: none;
+    }
+
+    .mobile-nav {
+        display: inline;
+    }
+
+    .burger-menu {
+        background-color: var(--color-principal);
+        color: var(--background-color);
+        border: none;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-color);
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-out;
+        padding: 5;
+    }
+
+    .nav-links.is-open {
+        max-height: 250px;
+    }
+
+    .nav-links li a {
+        padding: 15px 25px;
+        color: var(--background-color2);
+        font-size: 18px;
+        transition: background 0.2s ease;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .final {
+        padding: 10px 10px;
+
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .final .carta {
+        width: auto;
+    }
+}

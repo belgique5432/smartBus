@@ -1,0 +1,140 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #FFD341;
+    --background-color: #eeeff1;
+    --background-color2: #1E1E1E;
+
+    --color-principal: #0E643F;
+
+    --h1-size: 36px;
+    --h2-size: 24px;
+    --h3-size: 20px;
+    --h4-size: 16px;
+    --h5-size: 14px;
+}
+
+.navbar .derecha span {
+    background-color: var(--color-principal);
+    border-radius: 15px;
+    padding: 5px 10px;
+
+    color: white;
+}
+
+.ofertas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--text-color);
+
+    padding: 10px 100px;
+}
+
+.ofertas h1 {
+    font-size: var(--h1-size);
+    text-align: center;
+}
+
+.contenedor-ofertas {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    padding-top: 20px;
+}
+
+.carta-oferta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border-radius: 20px;
+    background-color: white;
+
+    width: 250px;
+}
+
+.carta-oferta button {
+    background-color: #0E643F;
+}
+
+.carta-oferta a {
+    color: white;
+}
+
+.carta-oferta img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.informacion-oferta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+
+    gap: 5px;
+}
+
+.informacion-oferta h3 {
+    font-size: var(--h3-size);
+}
+
+.informacion-oferta p {
+    font-size: var(--h5-size);
+    color: gray;
+}
+
+.informacion-oferta span {
+    font-size: var(--h3-size);
+}
+
+.precio-oferta {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.precio-oferta .izquierda-oferta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 5px;
+}
+
+.precio-oferta .izquierda-oferta p {
+    text-decoration: line-through;
+}
+
+.precio-oferta .derecha-oferta {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+    gap: 5px;
+}
+
+.precio-oferta .derecha-oferta span {
+    color: green;
+}
+
+@media (max-width: 1023px) {
+    .contenedor-ofertas {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-ofertas {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 519px) {
+    .contenedor-ofertas {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+}
